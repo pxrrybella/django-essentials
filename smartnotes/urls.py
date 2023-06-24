@@ -21,5 +21,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     ## include function to eliminate dependecies, best django practices
-    path('', include('home.urls'))
+    path('', include('home.urls')),
+    path('', include('request.urls'))
 ]
